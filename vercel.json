@@ -1,8 +1,10 @@
 {
-  "version": 2,
+  "framework": "vite",
+  "buildCommand": "npm run build",
+  "outputDirectory": "dist",
   "rewrites": [
     {
-      "source": "/((?!api/|sw\\.js|manifest\\.json|favicon\\.ico|icon\\.svg).*)",
+      "source": "/((?!api/|sw\\.js|manifest\\.json|icon\\.svg).*)",
       "destination": "/index.html"
     }
   ],
@@ -17,4 +19,3 @@
     }
   ]
 }
-
