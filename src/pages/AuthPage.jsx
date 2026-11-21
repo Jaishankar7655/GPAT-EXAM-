@@ -52,7 +52,7 @@ export default function AuthPage() {
   };
 
   return (
-    <div className="min-h-screen flex flex-col justify-center items-center px-4 py-12 bg-slate-50 dark:bg-slate-950">
+    <div className="flex flex-col justify-center items-center px-4 py-8 sm:py-12 bg-slate-50 dark:bg-slate-950 transition-colors duration-200">
       <div className="w-full max-w-md">
         {/* App Title Header */}
         <div className="text-center mb-8">

@@ -1,5 +1,7 @@
 @import "tailwindcss";
 
+@custom-variant dark (&:where(.dark, .dark *));
+
 @layer base {
   :root {
     --accent: #1e4d3b;
@@ -11,6 +13,7 @@
     --accent: #2e7d5e;
     --accent-hover: #3b9b75;
     --accent-light: #132b21;
+    color-scheme: dark;
   }
 }
 

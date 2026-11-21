@@ -77,29 +77,26 @@ export default function App() {
     );
   }
 
-  // Not logged in → Auth Page
+  // Not logged in → Auth Page with Navbar
   if (!user) {
-    return <AuthPage />;
+    return (
+      <div className="min-h-screen bg-slate-50 dark:bg-slate-950 text-slate-900 dark:text-slate-100 transition-colors duration-200">
+        <Navbar activeTab="auth" setActiveTab={setActiveTab} streakCount={0} />
+        <main className="pb-12">
+          <AuthPage />
+        </main>
+      </div>
+    );
   }
 
-  // First-time setup not done → Setup page
+  // First-time setup not done → Setup page with Navbar
   if (!profile?.isSetupCompleted) {
     return (
-      <div className="min-h-screen bg-slate-50 dark:bg-slate-950">
-        <div className="sticky top-0 z-30 bg-white dark:bg-slate-900 border-b border-slate-200 dark:border-slate-800 px-4 h-14 flex items-center justify-between shadow-xs">
-          <div className="flex items-center space-x-2">
-            <div className="w-8 h-8 rounded bg-[#1e4d3b] text-white flex items-center justify-center font-bold text-base">G</div>
-            <span className="font-semibold text-sm text-slate-900 dark:text-slate-100">GPAT Study Planner</span>
-          </div>
-          <button
-            onClick={logout}
-            className="text-xs text-slate-500 hover:text-rose-600 flex items-center space-x-1"
-          >
-            <LogOut className="w-4 h-4" />
-            <span>Log out</span>
-          </button>
-        </div>
-        <SetupPage onFinish={() => window.location.reload()} />
+      <div className="min-h-screen bg-slate-50 dark:bg-slate-950 text-slate-900 dark:text-slate-100 transition-colors duration-200">
+        <Navbar activeTab="setup" setActiveTab={setActiveTab} streakCount={0} />
+        <main className="pb-12">
+          <SetupPage onFinish={() => window.location.reload()} />
+        </main>
       </div>
     );
   }
