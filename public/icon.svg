@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="none">
+  <rect width="512" height="512" rx="128" fill="#1e4d3b"/>
+  <!-- Open Study Notebook / Flask symbol -->
+  <path d="M140 120H372C383.046 120 392 128.954 392 140V372C392 383.046 383.046 392 372 392H140C128.954 392 120 383.046 120 372V140C120 128.954 128.954 120 140 120Z" stroke="#f8fafc" stroke-width="24" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M180 120V392" stroke="#f8fafc" stroke-width="16" stroke-linecap="round"/>
+  <!-- Lines in planner -->
+  <line x1="220" y1="180" x2="340" y2="180" stroke="#a7f3d0" stroke-width="20" stroke-linecap="round"/>
+  <line x1="220" y1="240" x2="340" y2="240" stroke="#f8fafc" stroke-width="16" stroke-linecap="round"/>
+  <line x1="220" y1="300" x2="300" y2="300" stroke="#f8fafc" stroke-width="16" stroke-linecap="round"/>
+</svg>
+

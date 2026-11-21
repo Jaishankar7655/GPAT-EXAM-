@@ -1,0 +1,18 @@
+{
+  "name": "GPAT Exam Preparation & Study Tracker",
+  "short_name": "GPAT Prep",
+  "description": "Clean, focused GPAT study tracking, syllabus checklist, pace check, and daily practice quiz.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#1e4d3b",
+  "icons": [
+    {
+      "src": "/icon.svg",
+      "sizes": "192x192 512x512",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
+

@@ -1,0 +1,20 @@
+{
+  "version": 2,
+  "rewrites": [
+    {
+      "source": "/((?!api/|sw\\.js|manifest\\.json|favicon\\.ico|icon\\.svg).*)",
+      "destination": "/index.html"
+    }
+  ],
+  "crons": [
+    {
+      "path": "/api/cron?type=morning",
+      "schedule": "0 2 * * *"
+    },
+    {
+      "path": "/api/cron?type=evening",
+      "schedule": "0 15 * * *"
+    }
+  ]
+}
+
