@@ -22,12 +22,8 @@ function vercelApiDevPlugin() {
           const urlObj = new URL(req.url, `http://${req.headers.host || 'localhost'}`);
           const pathname = urlObj.pathname; // e.g. /api/auth
 
-          // Extract handler name from path:  /api/auth → auth
-          const routeName = pathname.replace(/^\/api\/?/, '').split('/')[0] || 'index';
-
-          // Build an absolute file URL — this avoids .vite-temp resolution issues
-          const absPath = path.join(projectRoot, 'api', `${routeName}.js`);
-          // Add a cache-busting timestamp so edits to api files reload in dev
+          // Forward all /api/* requests to api/index.js (same as Vercel)
+          const absPath = path.join(projectRoot, 'api', 'index.js');
           const fileUrl = pathToFileURL(absPath).href + `?t=${Date.now()}`;
 
           const module = await import(/* @vite-ignore */ fileUrl);
