@@ -340,7 +340,7 @@ export default function DashboardPage({ setActiveTab }) {
             </p>
           </div>
 
-          <div className="grid grid-cols-10 sm:grid-cols-12 gap-1.5 pt-2">
+          <div className="grid grid-cols-6 sm:grid-cols-10 md:grid-cols-12 gap-1.5 pt-2">
             {Array.from({ length: 60 }).map((_, i) => {
               const d = new Date();
               d.setDate(d.getDate() - (59 - i));

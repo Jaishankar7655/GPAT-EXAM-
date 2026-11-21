@@ -77,3 +77,4 @@ export default async function handler(req, res) {
     return sendError(res, 500, error.message || 'Seeding error');
   }
 }
+

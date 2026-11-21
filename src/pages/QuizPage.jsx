@@ -26,6 +26,7 @@ export default function QuizPage({ onNavigateToMistakes }) {
   const [visited, setVisited] = useState({}); // { [qId]: boolean }
   const [secondsRemaining, setSecondsRemaining] = useState(20 * 60);
   const [quizActive, setQuizActive] = useState(false);
+  const [showMobilePalette, setShowMobilePalette] = useState(false);
 
   // Result state
   const [submitted, setSubmitted] = useState(false);
